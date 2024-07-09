@@ -1,0 +1,5 @@
+# dependencies
+/front/app/node_modules
+
+# build
+/front/app/build

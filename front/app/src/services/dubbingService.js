@@ -14,7 +14,16 @@ const createDubbing = async (data) => {
             throw new Error('Network response was not ok');
         }
 
-        return await response.json();
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'dubbing.mp3');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+
+        return { success: true };
     } catch (error) {
         console.error('There was a problem with your fetch operation:', error);
         return { success: false };

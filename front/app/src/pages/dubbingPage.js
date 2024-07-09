@@ -6,15 +6,15 @@ const DubbingPage = () => {
     const handleSubmit = async (formData) => {
         const result = await createDubbing(formData);
         if (result.success) {
-            alert("Dubbing was successful! File saved at: " + result.result);
+            alert("Dubbing was successful!");
         } else {
-            alert("Dubbing failed or timed out.");
+            alert(result.error);
         }
     };
 
     return (
         <div className="DubbingPage">
-            <h1>Dubbing Application</h1>
+            <h1>Dubbing Creator</h1>
             <DubbingForm onSubmit={handleSubmit} />
         </div>
     );
