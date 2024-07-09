@@ -17,7 +17,7 @@ pip install pytube moviepy openai-whisper torch srt pyannote.audio
 ```
 pip install elevenlabs pydub
 pip install python-dotenv
-pip install flask-cors flask
+pip install flask-cors flask ffmpeg ffprobe 
 ```
 
 #### dans le dossier /front/app
