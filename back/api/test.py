@@ -11,11 +11,11 @@ if __name__ == "__main__":
     source_url = "https://youtu.be/QrHAMiZdb0g" 
     source_language = "de"
     target_language = "en"
-    result = create_dub_from_url(source_url, source_language, target_language)
-    if result:
-        print("Dubbing was successful! File saved at:", result)
-    else:
-        print("Dubbing failed or timed out.")
+    #result = create_dub_from_url(source_url, source_language, target_language)
+    #if result:
+    #    print("Dubbing was successful! File saved at:", result)
+    #else:
+    #    print("Dubbing failed or timed out.")
 
     #dubbing_id_sample = os.getenv("sample_dubbing_id")
-    #download_dubbed_file(dubbing_id= dubbing_id_sample, language_code="en")
+    download_dubbed_file(dubbing_id= "3aQLcNXLx6oDh9sHJcTp", language_code="en")

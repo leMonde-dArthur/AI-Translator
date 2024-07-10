@@ -30,7 +30,7 @@ h1 {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -43,7 +43,6 @@ label {
   font-weight: 600;
   color: var(--secondary-color);
   display: block;
-  margin-bottom: 0.5rem;
 }
 
 input,
@@ -95,4 +94,72 @@ button:hover {
   background-color: #5753e0;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #718096;
+  margin: 0.5rem 0;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #cbd5e0;
+}
+
+.or-separator::before {
+  margin-right: .5em;
+}
+
+.or-separator::after {
+  margin-left: .5em;
+}
+
+.file-input-container {
+  width: 100%;
+  height: 200px;
+  border: 3px dashed #cbd5e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-input-container:hover {
+  border-color: #667eea;
+  background-color: rgba(102, 126, 234, 0.1);
+}
+
+.file-input-container.drag-over {
+  border-color: #48bb78;
+  background-color: rgba(72, 187, 120, 0.1);
+}
+
+.file-input-container input[type="file"] {
+  display: none;
+}
+
+.file-input-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.file-input-text {
+  color: #4a5568;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.file-name {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--primary-color);
 }
