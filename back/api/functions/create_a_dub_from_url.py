@@ -2,7 +2,7 @@ import os
 from typing import Optional
 
 from dotenv import load_dotenv
-from dubbing_utils import download_dubbed_file, wait_for_dubbing_completion
+from .dubbing_utils import download_dubbed_file, wait_for_dubbing_completion
 from elevenlabs.client import ElevenLabs
 
 # Load environment variables
@@ -31,7 +31,7 @@ def create_dub_from_url(
         mode="automatic",
         source_lang=source_language,
         num_speakers=1,
-        watermark=True,  # reduces the characters used
+        watermark=False,  # reduces the characters used
     )
 
     dubbing_id = response.dubbing_id

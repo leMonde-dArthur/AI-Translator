@@ -18,7 +18,7 @@ const createDubbingUrl = async (data) => {
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'dubbing.mp3');
+        link.setAttribute('download', 'dubbing.mp4');
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);
@@ -47,10 +47,20 @@ const createDubbingFile = async (file, sourceLanguage, targetLanguage) => {
         }
 
         const blob = await response.blob();
+        const contentType = response.headers.get('content-type');
+        let extension = '';
+
+        // Vérifie le type MIME et ajuste l'extension si nécessaire
+        if (contentType === 'audio/mpeg') {
+            extension = 'mp3';
+        } else {
+            extension = contentType.split('/')[1];
+        }
+
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'dubbing.mp3');
+        link.setAttribute('download', `dubbing.${extension}`);
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);

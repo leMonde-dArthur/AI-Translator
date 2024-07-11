@@ -2,7 +2,7 @@ import os
 from typing import Optional
 
 from dotenv import load_dotenv
-from dubbing_utils import download_dubbed_file, wait_for_dubbing_completion
+from .dubbing_utils import download_dubbed_file, wait_for_dubbing_completion
 from elevenlabs.client import ElevenLabs
 
 # Load environment variables
@@ -45,15 +45,3 @@ def create_dub_from_file(
         return output_file_path
     else:
         return None
-
-if __name__ == "__main__":
-    result = create_dub_from_file(
-        "data/3aQLcNXLx6oDh9sHJcTp/test.mp4",  # Input file path
-        "audio/mpeg",  # File format
-        "en",  # Source language
-        "es",  # Target language
-    )
-    if result:
-        print("Dubbing was successful! File saved at:", result)
-    else:
-        print("Dubbing failed or timed out.")
