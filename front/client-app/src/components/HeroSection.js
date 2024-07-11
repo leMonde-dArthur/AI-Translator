@@ -133,7 +133,7 @@ const HeroSection = () => {
                         <div>
                             <div className="file-info">
                                 <h3>{file.name}</h3>
-                                <CancelIcon sx={{ color: red[500] }} />
+                                <CancelIcon onClick={handleRemoveFile} sx={{ color: red[500] }} />
                             </div>
                             <br></br></div> : <div>
                             <h3>Déposez votre fichier audio ici</h3>
