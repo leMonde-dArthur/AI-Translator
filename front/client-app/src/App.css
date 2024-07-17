@@ -273,6 +273,7 @@ footer {
 
 /* Style de la scrollbar */
 ::-webkit-scrollbar {
+  display: none;
   width: 12px;
   /* Largeur de la scrollbar */
   height: 12px;

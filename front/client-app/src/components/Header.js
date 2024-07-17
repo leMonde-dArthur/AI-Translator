@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -6,15 +7,15 @@ const Header = () => {
             <nav className="nav">
                 <div className="logo">Sumfy.</div>
                 <div className="nav-links">
-                    <a href="#use-cases" className="nav-links-a">
+                    <Link smooth to="/" className="nav-links-a">
                         Convertir
-                    </a>
-                    <a href="#features" className="nav-links-a">
+                    </Link>
+                    <Link smooth to="/#features" className="nav-links-a">
                         Fonctionnalités
-                    </a>
-                    <a href="#footer" className="nav-links-a">
+                    </Link>
+                    <Link smooth to="/contact" className="nav-links-a">
                         Contact
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>

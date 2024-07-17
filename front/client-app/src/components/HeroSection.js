@@ -58,10 +58,11 @@ const HeroSection = () => {
     };
 
     const handleFileSelect = (file) => {
-        if (file && file.type.startsWith('audio/')) {
+        if (file && (file.type.startsWith('audio/') || file.type.startsWith('video/'))) {
             setFile(file);
         }
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -139,7 +140,7 @@ const HeroSection = () => {
                             <h3>Déposez votre fichier audio ici</h3>
                             <p>ou</p>
                         </div>}
-                    <input type="file" id="fileInput" accept="audio/*" style={{ display: 'none' }} onChange={handleFileChange} />
+                    <input type="file" id="fileInput" accept="audio/*, video/*" style={{ display: 'none' }} onChange={handleFileChange} />
 
                     {file ? (
                         <React.Fragment>
