@@ -74,7 +74,7 @@ const HeroSection = () => {
         formData.append("file", file);
 
         try {
-            const response = await fetch("http://localhost:5000/upload-file-to-google-drive", {
+            const response = await fetch("https://sumfy.fr/api/upload-file-to-google-drive", {
                 method: "POST",
                 body: formData,
             });
