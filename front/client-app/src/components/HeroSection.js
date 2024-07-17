@@ -91,7 +91,7 @@ const HeroSection = () => {
             }
             setIsTranslating(false);
             setAlertSeverity('success');
-            setAlertMessage('Le fichier a été envoyé avec succès!');
+            setAlertMessage('Le fichier a été envoyé avec succès ! Vous recevrez rapidement une réponse');
 
         } catch (error) {
             console.error('Error uploading file:', error);
@@ -137,7 +137,7 @@ const HeroSection = () => {
                                 <CancelIcon onClick={handleRemoveFile} sx={{ color: red[500] }} />
                             </div>
                             <br></br></div> : <div>
-                            <h3>Déposez votre fichier audio ici</h3>
+                            <h3>Déposez votre fichier ici</h3>
                             <p>ou</p>
                         </div>}
                     <input type="file" id="fileInput" accept="audio/*, video/*" style={{ display: 'none' }} onChange={handleFileChange} />

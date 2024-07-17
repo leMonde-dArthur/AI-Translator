@@ -269,7 +269,97 @@ footer {
   .tagline {
     margin-bottom: 2rem;
   }
+
+  .nav-links {
+    display: none;
+    /* Hide regular nav links on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    /* Change background color for mobile menu */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.mobile-menu {
+    display: flex;
+    /* Show mobile menu when active */
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mobile-menu-toggle i {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .mobile-menu-toggle i.fa-times {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+  }
+
+  .mobile-menu-toggle i.fa-times {
+    transform: rotate(90deg);
+  }
+
+  .nav-links.mobile-menu {
+    display: flex;
+    opacity: 1;
+  }
+
+  .nav-links.mobile-menu a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 1.5rem;
+    transition: color 0.3s;
+    z-index: 1;
+  }
+
+  .nav-links.mobile-menu a:hover {
+    color: var(--accent-color);
+  }
 }
+
+/* Existing styles */
+.nav-links {
+  display: flex;
+  gap: 2.3rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+
 
 /* Style de la scrollbar */
 ::-webkit-scrollbar {
