@@ -1,0 +1,17 @@
+[33mefcdbd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m)[m HEAD@{0}: reset: moving to HEAD~2
+[33mf13d2fe[m HEAD@{1}: reset: moving to HEAD~2
+[33mf12387f[m HEAD@{2}: commit: interface coté client + export au format importer + petit fix
+[33md2f1ddc[m HEAD@{3}: reset: moving to HEAD
+[33md2f1ddc[m HEAD@{4}: commit: interface coté client + export au format importer + petit fix
+[33mf13d2fe[m HEAD@{5}: reset: moving to HEAD
+[33mf13d2fe[m HEAD@{6}: commit: interface coté client + export au format importer + petit fix
+[33m330d2f5[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{7}: commit (merge): Merge branch 'develop' of https://github.com/leMonde-dArthur/AI-Translator into develop
+[33mefcdbd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m)[m HEAD@{8}: commit: ajout du dubbing pour les fichiers
+[33mc7bc120[m HEAD@{9}: reset: moving to HEAD
+[33mc7bc120[m HEAD@{10}: commit: ajout de la partie react js et eleven labs
+[33mf252e76[m HEAD@{11}: commit: utilisation de l'api eleven labs
+[33mf484354[m HEAD@{12}: commit: script convert YTB to audio, audio to text, speaker diarization
+[33m72b93a8[m HEAD@{13}: commit: ajout des dossiers pour ranger le back et le front
+[33m644b53d[m[33m ([m[1;31morigin/pre-prod[m[33m, [m[1;31morigin/IHM-d'upload---côté-client[m[33m, [m[1;32mmain[m[33m)[m HEAD@{14}: checkout: moving from main to develop
+[33m644b53d[m[33m ([m[1;31morigin/pre-prod[m[33m, [m[1;31morigin/IHM-d'upload---côté-client[m[33m, [m[1;32mmain[m[33m)[m HEAD@{15}: Branch: renamed refs/heads/main to refs/heads/main
+[33m644b53d[m[33m ([m[1;31morigin/pre-prod[m[33m, [m[1;31morigin/IHM-d'upload---côté-client[m[33m, [m[1;32mmain[m[33m)[m HEAD@{17}: commit (initial): first commit

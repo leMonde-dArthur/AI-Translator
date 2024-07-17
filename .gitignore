@@ -1,0 +1,6 @@
+# dependencies
+node_modules
+back/api/credentials.json
+
+# build
+/front/app/build
