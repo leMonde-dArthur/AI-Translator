@@ -5,7 +5,9 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import VideoPlayer from './components/VideoPlayer';
 import ContactForm from './components/ContactForm';
+
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -19,6 +21,8 @@ const Home = () => {
       <main className="main container">
         <HeroSection />
         <Features />
+        <VideoPlayer />
+
       </main>
     </div>
   );

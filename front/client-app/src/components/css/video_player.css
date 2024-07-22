@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #4f46e5;
+    --accent-color: #34d399;
+    --background-color: #f3f4f6;
+    --text-color: #1f2937;
+    --light-text: #6b7280;
+}
+
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    box-shadow: var(--box-shadow);
+    flex-direction: row;
+    /* Change direction to column for mobile */
+}
+
+video {
+    border-radius: 10px;
+    width: 550px;
+    /* Make video take up full width on mobile */
+}
+
+.left-video,
+.right-video {
+    border-radius: 10px;
+    max-width: 550px;
+    /* Make video take up full width on mobile */
+    padding: 25px;
+}
+
+.right-video-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.react-player {
+    margin-bottom: 20px;
+}
+
+.language-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.language-item:hover {
+    background-color: #e6e6e6;
+}
+
+.language-item.selected {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.video-description {
+    font-size: 25px;
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+}
+
+.video-section {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    /* Apply these styles only for screens larger than 768px */
+    .video-player-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    video {
+        max-width: 350px;
+        max-height: 240px;
+    }
+
+    .left-video,
+    .right-video {
+        max-width: 325px;
+        max-height: 240px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+
+
+    }
+
+    .language-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        max-width: 325px;
+        flex-wrap: wrap;
+        /* Allow flex items to wrap onto the next line */
+    }
+
+    .language-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+        flex-shrink: 0;
+        /* Prevent flex items from shrinking */
+    }
+
+}
